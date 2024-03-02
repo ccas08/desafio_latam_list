@@ -1,0 +1,14 @@
+#tasks li.completed {
+    text-decoration: line-through;
+}
+.completed {
+    text-decoration: line-through;
+}
+
+.delete-button {
+    color: red;
+    border: none;
+    background: none;
+    font-size: 20px;
+    cursor: pointer;
+}

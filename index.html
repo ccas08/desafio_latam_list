@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo List</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        Todo List
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="new-task">Nueva tarea</label>
+                            <div class="input-group">
+                                <input type="text" id="new-task" class="form-control" placeholder="Agregar nueva tarea">
+                                <div class="input-group-append">
+                                    <button class="btn btn-success" onclick="addTask()">Agregar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <p>Total: <span id="total-tasks">0</span></p>
+                        <p>Realizadas: <span id="completed-tasks">0</span></p>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Tarea</th>
+                                    <th>Completar</th>
+                                    <th>Eliminar</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tasks">
+                                <!-- Las tareas se añadirán aquí -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
+
